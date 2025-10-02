@@ -1,0 +1,1 @@
+If CORS still blocks, register App\Http\Middleware\Cors in app/Http/Kernel.php (global middleware).

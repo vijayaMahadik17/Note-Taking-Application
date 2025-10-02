@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "NoteApp",
+    "_postman_id": "d3aef1b8-1111-4444-8888-notesapp",
+    "description": "Endpoints for Notes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Notes",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/notes"
+      }
+    },
+    {
+      "name": "Create Note",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"My Note\", \"content\": \"Hello world\"}"
+        },
+        "url": "{{base_url}}/notes"
+      }
+    },
+    {
+      "name": "Show Note",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/notes/{{note_id}}"
+      }
+    },
+    {
+      "name": "Update Note",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Updated\", \"content\": \"World\"}"
+        },
+        "url": "{{base_url}}/notes/{{note_id}}"
+      }
+    },
+    {
+      "name": "Delete Note",
+      "request": {
+        "method": "DELETE",
+        "url": "{{base_url}}/notes/{{note_id}}"
+      }
+    }
+  ]
+}
