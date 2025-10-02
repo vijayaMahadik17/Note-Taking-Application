@@ -1,4 +1,4 @@
-# Notes Taking App (Laravel API + Vue 3)
+# Notes Taking App (Laravel  + Vue 3)
 
 
 **Setup Needed**
@@ -106,6 +106,7 @@ php artisan test
 - `eloquent_examples.php` — Eloquent builder examples
 
 ---
+
 
 
 
