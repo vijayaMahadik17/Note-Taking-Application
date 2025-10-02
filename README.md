@@ -1,4 +1,4 @@
-# Notes Taking App (Laravel API + Vue 3/Tailwind)
+# Notes Taking App (Laravel API + Vue 3)
 
 
 **Setup Needed**
@@ -106,5 +106,6 @@ php artisan test
 - `eloquent_examples.php` — Eloquent builder examples
 
 ---
+
 
 
